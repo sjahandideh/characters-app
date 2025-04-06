@@ -3,10 +3,10 @@ import Character from "../components/Character"
 export default async function CharacterPage({
   params,
 }: {
-  params: { slug: string }
+  params: { id: string }
 }) {
-  const { slug } = await params
-  if (!slug) return
+  const { id } = await params
+  if (!id) return
 
-  return <Character id={slug} />
+  return <Character id={id} />
 }

@@ -83,7 +83,7 @@ const UserInfoForm = ({
           <Fieldset.Legend>{headingText}</Fieldset.Legend>
           <Fieldset.Content>
             <Field.Root orientation="horizontal" invalid={!!errors["username"]}>
-              <Field.Label htmlFor="name">Username</Field.Label>
+              <Field.Label>Username</Field.Label>
               <Input
                 placeholder="kate"
                 flex="1"
@@ -97,7 +97,7 @@ const UserInfoForm = ({
             </Field.Root>
 
             <Field.Root orientation="horizontal" invalid={!!errors["jobTitle"]}>
-              <Field.Label htmlFor="job title">Job title</Field.Label>
+              <Field.Label>Job title</Field.Label>
               <Input
                 placeholder="Software Engineer"
                 flex="1"
