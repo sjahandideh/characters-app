@@ -1,8 +1,9 @@
 import { Box } from "@chakra-ui/react"
 import { Grid, GridItem } from "@chakra-ui/react/grid"
 import MainSidebar from "./MainSidebar"
+import { ReactNode } from "react"
 
-const AppLayout = ({ children }) => {
+const AppLayout = ({ children }: { children: ReactNode }) => {
   return (
     <Grid
       templateAreas={{

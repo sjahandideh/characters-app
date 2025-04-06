@@ -8,7 +8,7 @@ type ModalProps = {
   children: React.ReactNode
 }
 
-const Modal = ({ open, children, onClose }: ModalProps) => {
+const Modal = ({ open, children }: ModalProps) => {
   if (!open) return null
 
   return (

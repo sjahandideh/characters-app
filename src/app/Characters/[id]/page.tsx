@@ -1,12 +1,13 @@
 import Character from "../components/Character"
 
-export default async function CharacterPage({
+const CharacterPage = async ({
   params,
 }: {
-  params: { id: string }
-}) {
+  params: Promise<{ id: string }>
+}) => {
   const { id } = await params
-  if (!id) return
 
   return <Character id={id} />
 }
+
+export default CharacterPage
